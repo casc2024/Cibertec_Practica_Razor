@@ -41,7 +41,7 @@ namespace WebDeveloper.Controllers
 
         public ActionResult Edit(int id)
         {
-            return View(_persona.GetClientById(id));
+            return View(_persona.GetClientById(id)); 
         }
 
         [HttpPost]
