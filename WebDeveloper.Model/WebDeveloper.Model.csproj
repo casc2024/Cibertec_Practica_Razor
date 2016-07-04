@@ -51,6 +51,7 @@
     <Compile Include="CountryRegion.cs" />
     <Compile Include="DTO\PersonModelView.cs" />
     <Compile Include="EmailAddress.cs" />
+    <Compile Include="Entity\Persona.cs" />
     <Compile Include="Password.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonPhone.cs" />

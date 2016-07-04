@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.0.0\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -162,10 +166,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionFilters\LogActionFilter.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonaController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -183,6 +190,14 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Imagenes\1.jpg" />
+    <Content Include="Imagenes\2.jpg" />
+    <Content Include="Imagenes\3.jpg" />
+    <Content Include="Imagenes\4.jpg" />
+    <Content Include="Imagenes\5.jpg" />
+    <Content Include="Imagenes\6.jpg" />
+    <Content Include="Imagenes\7.jpg" />
+    <Content Include="Imagenes\8.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="compilerconfig.json" />
@@ -219,6 +234,11 @@
     <Content Include="scss\styles.scss" />
     <Content Include="scss\base\_site.scss" />
     <Content Include="scss\helpers\_colors.scss" />
+    <Content Include="Views\Person\Index.cshtml" />
+    <Content Include="Views\Persona\Index.cshtml" />
+    <Content Include="Views\Persona\Create.cshtml" />
+    <Content Include="Views\Persona\Edit.cshtml" />
+    <Content Include="Views\Persona\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

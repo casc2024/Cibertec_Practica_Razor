@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace WebDeveloper.Model.DTO
+namespace WebDeveloper.Model.Entity
 {
-    public class PersonModelView
+    public class Persona
     {
-        public int BusinessEntityID { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "This field is required")]
         [StringLength(50)]
@@ -26,6 +22,10 @@ namespace WebDeveloper.Model.DTO
         public string LastName { get; set; }
 
         [Display(Name = "Modified Date")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime ModifiedDate { get; set; }
+
+        [Display(Name = "Photo")]
+        public string Photo { get; set; }
     }
 }
